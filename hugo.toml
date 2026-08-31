@@ -22,28 +22,30 @@ ignoreErrors = ['error-disable-taxonomy']
 [params]
   description = 'Buurtbox is a plug-and-play offline data hub for neighbourhoods — keeping essential information available when the internet goes down.'
   hideMadeWithLine = false
+  favicon = 'images/favicon.svg'
+  images = ['images/share.png']
 
 [[menu.main]]
   name = 'Concept'
-  url = '/#concept'
+  url = '#concept'
   weight = 10
 
 [[menu.main]]
   name = 'Hardware'
-  url = '/#hardware'
+  url = '#hardware'
   weight = 20
 
 [[menu.main]]
   name = 'Features'
-  url = '/#features'
+  url = '#features'
   weight = 30
 
 [[menu.main]]
   name = 'Planning'
-  url = '/#planning'
+  url = '#planning'
   weight = 40
 
 [[menu.main]]
   name = 'Contact'
-  url = '/#contact'
+  url = '#contact'
   weight = 50
