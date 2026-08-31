@@ -1,0 +1,49 @@
+baseURL = 'https://buurtbox.org/'
+locale = 'en-US'
+title = 'Buurtbox'
+author = 'Lars Böhm'
+copyright = 'Copyright © 2026, Lars Böhm.'
+enableRobotsTXT = true
+
+theme = 'hugo-bearblog'
+
+# Required by hugo-bearblog
+disableKinds = ['taxonomy']
+ignoreErrors = ['error-disable-taxonomy']
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    style = 'friendly'
+    lineNos = false
+    codeFences = true
+
+[params]
+  description = 'Buurtbox is a plug-and-play offline data hub for neighbourhoods — keeping essential information available when the internet goes down.'
+  hideMadeWithLine = false
+
+[[menu.main]]
+  name = 'Concept'
+  url = '/#concept'
+  weight = 10
+
+[[menu.main]]
+  name = 'Hardware'
+  url = '/#hardware'
+  weight = 20
+
+[[menu.main]]
+  name = 'Features'
+  url = '/#features'
+  weight = 30
+
+[[menu.main]]
+  name = 'Planning'
+  url = '/#planning'
+  weight = 40
+
+[[menu.main]]
+  name = 'Contact'
+  url = '/#contact'
+  weight = 50

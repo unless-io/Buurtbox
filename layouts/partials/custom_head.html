@@ -1,0 +1,94 @@
+<style>
+  :root {
+    --link-color: #c75000;
+    --visited-color: #8f3a00;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --link-color: #e8874a;
+      --visited-color: #c8653a;
+    }
+  }
+
+  /* ── One-pager section spacing ── */
+  section {
+    margin-block: 2.5rem;
+  }
+
+  section h2 {
+    margin-bottom: 0.25rem;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    padding-block: 2rem;
+    margin-bottom: 0;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .tagline {
+    font-size: 1.15rem;
+    color: var(--text-color);
+    margin-top: 0;
+  }
+
+  .status-badge {
+    display: inline-block;
+    font-size: 0.85rem;
+    background: color-mix(in srgb, var(--link-color) 12%, transparent);
+    color: var(--link-color);
+    border: 1px solid color-mix(in srgb, var(--link-color) 30%, transparent);
+    border-radius: 4px;
+    padding: 0.2rem 0.6rem;
+    margin-top: 0.5rem;
+  }
+
+  /* ── Features grid ── */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-block: 1.25rem;
+  }
+
+  .feature-item {
+    border: 1px solid color-mix(in srgb, var(--text-color) 20%, transparent);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .feature-item strong {
+    color: var(--heading-color);
+  }
+
+  .feature-item span {
+    font-size: 0.9rem;
+  }
+
+  /* ── Tables ── */
+  table {
+    border-collapse: collapse;
+    margin-block: 1rem;
+  }
+
+  th {
+    text-align: left;
+    border-bottom: 2px solid color-mix(in srgb, var(--text-color) 30%, transparent);
+    padding: 0.4rem 0.75rem 0.4rem 0;
+    color: var(--heading-color);
+  }
+
+  td {
+    vertical-align: top;
+    padding: 0.4rem 0.75rem 0.4rem 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--text-color) 12%, transparent);
+  }
+</style>

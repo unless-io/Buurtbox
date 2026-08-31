@@ -1,0 +1,199 @@
+{{ define "main" }}
+
+<section class="hero">
+  <h1>Buurtbox</h1>
+  <p class="tagline">Your neighbourhood's offline data hub</p>
+  <p class="status-badge">🚧 This project is currently in development</p>
+</section>
+
+<hr>
+
+<section id="concept">
+  <h2>Concept</h2>
+
+  <h3>The problem</h3>
+  <p>
+    Modern society is deeply dependent on digital infrastructure for access to essential knowledge —
+    Wikipedia for everyday information, maps for navigation, government health sites like the RIVM
+    and GGD for medical guidance. Internet access in the Netherlands is fast and reliable nearly
+    everywhere, so local storage feels unnecessary. Until it isn't.
+  </p>
+  <p>
+    When internet access fails — during a cyberattack, a large-scale power outage, or a natural
+    disaster — the sudden loss of that information can lead to genuinely dangerous situations.
+    Emergency services become overloaded. People can't find first-aid instructions. Coordination
+    breaks down.
+  </p>
+
+  <h3>The solution</h3>
+  <p>
+    <strong>Buurtbox</strong> is a plug-and-play local data station designed for installation in
+    neighbourhood and community centres. It broadcasts a local Wi-Fi network. When users connect,
+    they are redirected to a portal where a curated collection of offline data is available —
+    no internet required.
+  </p>
+  <p>
+    Buurtbox is designed to transform a neighbourhood centre into a <em>digital fallback point</em>:
+    a physical place where residents can go during an emergency to access essential information,
+    coordinate with neighbours, and find calm in the middle of a crisis.
+  </p>
+</section>
+
+<hr>
+
+<section id="hardware">
+  <h2>Hardware</h2>
+  <p>
+    The Buurtbox is built around a low-power, proven stack designed for long-term reliability and
+    energy efficiency.
+  </p>
+
+  <ul>
+    <li><strong>Server:</strong> Raspberry Pi 4 or 5 — energy-efficient, robust, and widely available</li>
+    <li><strong>Storage:</strong> 1 TB+ SSD — enough for Wikipedia, maps, and much more</li>
+    <li><strong>Backup power:</strong> High-capacity powerbank — automatic failover when mains power fails</li>
+    <li><strong>Enclosure:</strong> Compact housing suitable for a shelf or desk in a community space</li>
+  </ul>
+
+  <h3>Power modes</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Mode</th>
+        <th>Setup</th>
+        <th>Runtime</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Standard</td>
+        <td>Mains power + powerbank failover</td>
+        <td>1–2 days on battery</td>
+      </tr>
+      <tr>
+        <td>30-min button</td>
+        <td>Physical button activates the device for 30 min per press</td>
+        <td>1 week+</td>
+      </tr>
+      <tr>
+        <td>Solar</td>
+        <td>Small portable solar panel added to the setup</td>
+        <td>Indefinite</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Future extension: LoRa mesh</h3>
+  <p>
+    A LoRa transceiver can be added to each Buurtbox to form a local mesh network between units
+    across a neighbourhood. This enables text-based communication and news exchange between
+    Buurtboxes over distances of several kilometres — even when fixed internet infrastructure is
+    completely unavailable.
+  </p>
+</section>
+
+<hr>
+
+<section id="features">
+  <h2>Available offline</h2>
+  <p>
+    The Buurtbox is stocked with a curated dataset of public-domain and openly licensed content,
+    assembled with emergency resilience in mind.
+  </p>
+
+  <div class="features-grid">
+    <div class="feature-item">
+      <strong>Wikipedia</strong>
+      <span>Full offline snapshot in Dutch and English</span>
+    </div>
+    <div class="feature-item">
+      <strong>Government health information</strong>
+      <span>Offline mirrors of RIVM, GGD and related sites</span>
+    </div>
+    <div class="feature-item">
+      <strong>Medical &amp; first aid</strong>
+      <span>First-aid manuals, triage guides, emergency protocols</span>
+    </div>
+    <div class="feature-item">
+      <strong>Local maps</strong>
+      <span>Offline OpenStreetMap data for the surrounding area</span>
+    </div>
+    <div class="feature-item">
+      <strong>Emergency handbooks</strong>
+      <span>Crisis response guides, infrastructure recovery instructions</span>
+    </div>
+    <div class="feature-item">
+      <strong>E-books &amp; audiobooks</strong>
+      <span>Public-domain library for extended offline use</span>
+    </div>
+    <div class="feature-item">
+      <strong>Cultural archive</strong>
+      <span>Public-domain art, music, and reference works</span>
+    </div>
+  </div>
+
+  <p>
+    All data is sourced exclusively from the public domain or open licenses. The dataset is managed
+    via a manifest and a dedicated admin application, enabling controlled updates and distribution
+    across multiple Buurtboxes.
+  </p>
+</section>
+
+<hr>
+
+<section id="planning">
+  <h2>Planning</h2>
+  <p>The Buurtbox is being developed over a six-month timeline with a working prototype, a pilot
+  user test, and an open-source release as key milestones.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Month</th>
+        <th>Milestone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Procure hardware components; start development of data management dashboard; make contact with pilot partners</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Build working prototype; complete first version of the dataset</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Test and iterate on the prototype; develop the portal interface and UX</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Prepare prototype for user testing; design poster and manual; run pilot user tests with partner</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Complete user tests; analyse results; plan improvements based on test findings</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Final prototype; publish dataset; release code as open source; write results article; publish self-build hardware instructions</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<hr>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>
+    Buurtbox is an open project. Whether you're interested in running a pilot, contributing to the
+    dataset, or simply want to learn more — feel free to reach out.
+  </p>
+  <p>
+    <strong>Lars Böhm</strong><br>
+    <a href="mailto:info@buurtbox.org">info@buurtbox.org</a>
+  </p>
+</section>
+
+{{ end }}
