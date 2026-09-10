@@ -26,6 +26,11 @@ ignoreErrors = ['error-disable-taxonomy']
   images = ['images/share.png']
 
 [[menu.main]]
+  name = 'Pilot'
+  url = '/pilot/'
+  weight = 5
+
+[[menu.main]]
   name = 'Concept'
   url = '#concept'
   weight = 10

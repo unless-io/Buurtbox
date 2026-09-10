@@ -1,1 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Buurtbox</title><link>https://buurtbox.org/</link><description>Recent content on Buurtbox</description><generator>Hugo</generator><language>en-US</language><copyright>Copyright © 2026, Lars Böhm.</copyright><atom:link href="https://buurtbox.org/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Buurtbox</title>
+		<link>http://localhost:1313/</link>
+		<description>Recent content on Buurtbox</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+			<copyright>Copyright © 2026, Lars Böhm.</copyright>
+		
+		
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Pilot</title>
+				<link>http://localhost:1313/pilot/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pilot/</guid>
+				<description>&lt;h1 id=&#34;buurtbox-pilot&#34;&gt;Buurtbox Pilot&lt;/h1&gt;&#xA;&lt;h2 id=&#34;help-us-test-resilient-digital-infrastructure-in-the-neighbourhood&#34;&gt;Help us test resilient digital infrastructure in the neighbourhood&lt;/h2&gt;&#xA;&lt;p&gt;What happens when a neighbourhood loses internet and electricity during an emergency?&lt;/p&gt;&#xA;&lt;p&gt;Buurtbox is an open-source, energy-efficient offline information station designed to keep essential digital information available when normal digital infrastructure is unavailable.&lt;/p&gt;&#xA;&lt;p&gt;We are now looking for organisations and communities that want to help us test this concept in practice.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;We are looking for pilot partners for the first Buurtbox prototype, planned for Q1 2027.&lt;/strong&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

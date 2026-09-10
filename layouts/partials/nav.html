@@ -1,0 +1,9 @@
+{{ $homeBase := "" | relURL }}
+{{ range .Site.Menus.main }}
+{{ $url := .URL }}
+{{ if hasPrefix $url "#" }}
+<a href="{{ if eq $.RelPermalink $homeBase }}{{ $url }}{{ else }}{{ $homeBase }}{{ $url }}{{ end }}">{{ .Name }}</a>
+{{ else }}
+<a href="{{ $url | relURL }}">{{ .Name }}</a>
+{{ end }}
+{{ end }}
