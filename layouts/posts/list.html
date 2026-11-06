@@ -1,0 +1,33 @@
+{{ define "main" }}
+<content>
+  <h1>{{ .Title }}</h1>
+
+  <div class="post-overview-grid">
+    {{ range .Pages.ByDate.Reverse }}
+    {{ $post := . }}
+    <article class="post-overview-card">
+      {{ with .Params.thumbnail }}
+      <a class="post-overview-thumb-link" href="{{ $post.RelPermalink }}" aria-label="{{ $post.Title }}">
+        <img class="post-overview-thumb" src="{{ . | relURL }}" alt="{{ $post.Title }} thumbnail" loading="lazy">
+      </a>
+      {{ end }}
+
+      <div class="post-overview-body">
+        <time class="post-overview-date" datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
+        </time>
+        <h2 class="post-overview-title">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+        <p class="post-overview-excerpt">{{ .Summary | plainify | truncate 220 }}</p>
+        <p class="post-overview-readmore">
+          <a href="{{ .RelPermalink }}">{{ if eq .Site.Language.Lang "nl" }}Lees meer{{ else }}Read more{{ end }} →</a>
+        </p>
+      </div>
+    </article>
+    {{ else }}
+    <p>{{ if eq .Site.Language.Lang "nl" }}Nog geen blogposts.{{ else }}No posts yet.{{ end }}</p>
+    {{ end }}
+  </div>
+</content>
+{{ end }}

@@ -31,6 +31,11 @@
     margin-bottom: 0.25rem;
   }
 
+  .hero h1 a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   .tagline {
     font-size: 1.15rem;
     color: var(--text-color);
@@ -121,6 +126,59 @@
     font-size: 0.9rem;
   }
 
+  .post-overview-grid {
+    display: grid;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+  }
+
+  .post-overview-card {
+    border: 1px solid color-mix(in srgb, var(--text-color) 20%, transparent);
+    border-radius: 10px;
+    overflow: hidden;
+    background: color-mix(in srgb, var(--background-color) 95%, var(--link-color));
+  }
+
+  .post-overview-thumb-link {
+    display: block;
+  }
+
+  .post-overview-thumb {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 8;
+    object-fit: cover;
+  }
+
+  .post-overview-body {
+    padding: 1rem;
+  }
+
+  .post-overview-date {
+    display: inline-block;
+    font-size: 0.85rem;
+    opacity: 0.85;
+    margin-bottom: 0.4rem;
+  }
+
+  .post-overview-title {
+    margin: 0 0 0.45rem;
+  }
+
+  .post-overview-title a {
+    text-decoration: none;
+  }
+
+  .post-overview-excerpt {
+    margin: 0;
+  }
+
+  .post-overview-readmore {
+    margin: 0.75rem 0 0;
+    font-weight: 600;
+  }
+
   /* ── Tables ── */
   table {
     border-collapse: collapse;
@@ -169,6 +227,14 @@
 
 <meta name="author" content="Lars Böhm" />
 
+{{ $websiteDescription := .Site.Params.description }}
+{{ $orgDescription := "Buurtbox is a local data station installed in neighbourhood centres. It broadcasts a Wi-Fi hotspot with a curated offline dataset covering Wikipedia, maps, first-aid, and emergency protocols - available without internet access." }}
+{{ $knowsAbout := slice "offline data access" "emergency preparedness" "civic resilience" "Raspberry Pi" "neighbourhood infrastructure" "mesh networking" }}
+{{ if eq .Site.Language.Lang "nl" }}
+{{ $orgDescription = "Buurtbox is een lokaal datastation voor buurtcentra. Het zendt een wifi-hotspot uit met een samengestelde offline dataset met onder andere Wikipedia, kaarten, EHBO en noodprotocollen - beschikbaar zonder internetverbinding." }}
+{{ $knowsAbout = slice "offline datatoegang" "rampenparaatheid" "maatschappelijke weerbaarheid" "Raspberry Pi" "buurtinfrastructuur" "mesh-netwerken" }}
+{{ end }}
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -177,27 +243,20 @@
       "@type": "WebSite",
       "name": "Buurtbox",
       "url": "https://buurtbox.org",
-      "description": "Plug-and-play offline data hub for neighbourhoods — keeping essential information available when the internet goes down."
+      "description": {{ $websiteDescription | jsonify }}
     },
     {
       "@type": "Organization",
       "name": "Buurtbox",
       "url": "https://buurtbox.org",
       "email": "info@buurtbox.org",
-      "description": "Buurtbox is a local data station installed in neighbourhood centres. It broadcasts a Wi-Fi hotspot with a curated offline dataset covering Wikipedia, maps, first-aid, and emergency protocols — available without internet access.",
+      "description": {{ $orgDescription | jsonify }},
       "founder": {
         "@type": "Person",
         "name": "Lars Böhm",
         "email": "info@buurtbox.org"
       },
-      "knowsAbout": [
-        "offline data access",
-        "emergency preparedness",
-        "civic resilience",
-        "Raspberry Pi",
-        "neighbourhood infrastructure",
-        "mesh networking"
-      ]
+      "knowsAbout": {{ $knowsAbout | jsonify }}
     }
   ]
 }

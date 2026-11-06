@@ -1,13 +1,207 @@
-{{ define "title" }}Buurtbox — Your neighbourhood's offline data hub{{ end }}
+{{ define "title" }}{{ if eq .Site.Language.Lang "nl" }}Buurtbox - De offline datahub voor je buurt{{ else }}Buurtbox - Your neighbourhood's offline data hub{{ end }}{{ end }}
 
 {{ define "main" }}
 
-<section class="hero">
-  <h1>Buurtbox</h1>
-  <p class="tagline">Resilient data hubs for total blackouts</p>
-  <p class="status-badge">🚧 This project is currently in development</p>
+{{ if eq .Site.Language.Lang "nl" }}
+<section class="pilot-cta">
+  <p class="eyebrow">Pilot</p>
+  <h2>Kan jouw buurt een Buurtbox-pilotlocatie worden?</h2>
+  <p>
+    Als het internet uitvalt, mag toegang tot essentiële informatie daar niet mee verdwijnen.
+    We zijn op zoek naar gemeenten, maatschappelijke organisaties, veiligheidspartners en andere
+    partijen die het eerste Buurtbox-prototype willen helpen testen in een echte buurt.
+  </p>
+  <div class="cta-actions">
+    <a class="primary-cta" href="{{ "pilot/" | relLangURL }}">Bekijk de pilot</a>
+    <a class="secondary-cta" href="mailto:info@buurtbox.org?subject=Buurtbox%20pilot%20aanvraag">Neem contact op</a>
+  </div>
 </section>
 
+<section id="concept">
+  <h2>Concept</h2>
+
+  <h3>Het probleem</h3>
+  <p>
+    De moderne samenleving staat voor haar dagelijkse informatiebehoeften sterk op digitale infrastructuur.
+    Wikipedia als naslagwerk, kaarten voor navigatie, de RIVM- en GGD-websites voor medisch advies.
+    Internet is in Nederland snel en vrijwel overal beschikbaar — lokale opslag voelt daardoor overbodig.
+    Tot het er niet meer is.
+  </p>
+  <p>
+    Wanneer internet wegvalt — door een cyberaanval, een grote stroomstoring of een natuurramp —
+    kan dat plotselinge gebrek aan informatie tot gevaarlijke situaties leiden.
+    Hulpdiensten worden overspoeld. Mensen vinden geen EHBO-instructies. Coördinatie stokt.
+  </p>
+
+  <h3>De oplossing</h3>
+  <p>
+    <strong>Buurtbox</strong> is een plug-and-play lokaal datastation voor buurt- en wijkcentra.
+    Het zendt een eigen wifi-netwerk uit. Wie verbinding maakt, belandt automatisch in een portaal
+    met een samengestelde collectie offline data — zonder internet.
+  </p>
+  <p>
+    Buurtbox maakt van een buurtcentrum een <em>digitaal terugvalpunt</em>:
+    een fysieke plek waar bewoners in een noodsituatie naartoe kunnen om essentiële informatie te raadplegen,
+    contact te leggen met buren en houvast te vinden.
+  </p>
+</section>
+
+<hr>
+
+<section id="hardware">
+  <h2>Hardware</h2>
+  <p>
+    De Buurtbox draait op een energiezuinige, bewezen hardwarestack die is ontworpen voor
+    betrouwbaarheid op de lange termijn.
+  </p>
+
+  <ul>
+    <li><strong>Server:</strong> Raspberry Pi 4 of 5 — zuinig, robuust en breed verkrijgbaar</li>
+    <li><strong>Opslag:</strong> 1 TB+ SSD — ruimte voor Wikipedia, kaarten en veel meer</li>
+    <li><strong>Noodstroom:</strong> Powerbank met hoge capaciteit — automatische overschakeling bij stroomuitval</li>
+    <li><strong>Behuizing:</strong> Compact formaat, geschikt voor een plank of bureau in een buurtruimte</li>
+  </ul>
+
+  <h3>Stroomopties</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Modus</th>
+        <th>Opstelling</th>
+        <th>Looptijd</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Standaard</td>
+        <td>Netstroom + powerbank-failover</td>
+        <td>1–2 dagen op batterij</td>
+      </tr>
+      <tr>
+        <td>30-minutenknop</td>
+        <td>Fysieke knop activeert het apparaat 30 minuten per druk</td>
+        <td>1 week+</td>
+      </tr>
+      <tr>
+        <td>Zonne-energie</td>
+        <td>Draagbaar zonnepaneel toegevoegd aan de opstelling</td>
+        <td>Onbepaald</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Toekomstige uitbreiding: LoRa-mesh</h3>
+  <p>
+    Aan elke Buurtbox kan een LoRa-transceiver worden toegevoegd, zodat de units in een buurt
+    samen een lokaal mesh-netwerk vormen. Dat maakt tekstcommunicatie en nieuwsuitwisseling
+    over meerdere kilometers mogelijk — ook als de vaste internetinfrastructuur volledig is uitgevallen.
+  </p>
+</section>
+
+<hr>
+
+<section id="features">
+  <h2>Offline beschikbaar</h2>
+  <p>
+    De Buurtbox bevat een samengestelde dataset van publiekrechtelijke en open-gelicenseerde inhoud,
+    samengesteld met oog op weerbaarheid bij noodsituaties.
+  </p>
+
+  <div class="features-grid">
+    <div class="feature-item">
+      <strong>Wikipedia</strong>
+      <span>Volledige offline snapshot in het Nederlands en Engels</span>
+    </div>
+    <div class="feature-item">
+      <strong>Overheidsinformatie gezondheid</strong>
+      <span>Offline mirrors van RIVM, GGD en aanverwante websites</span>
+    </div>
+    <div class="feature-item">
+      <strong>Medisch en EHBO</strong>
+      <span>EHBO-handleidingen, triagegidsen en noodprotocollen</span>
+    </div>
+    <div class="feature-item">
+      <strong>Lokale kaarten</strong>
+      <span>Offline OpenStreetMap-data voor de directe omgeving</span>
+    </div>
+    <div class="feature-item">
+      <strong>Noodhandleidingen</strong>
+      <span>Crisisrespons en herstelprocedures voor infrastructuur</span>
+    </div>
+    <div class="feature-item">
+      <strong>E-books en luisterboeken</strong>
+      <span>Publiekdomeinbibliotheek voor langdurig offline gebruik</span>
+    </div>
+    <div class="feature-item">
+      <strong>Cultureel archief</strong>
+      <span>Beeldende kunst, muziek en naslagwerken uit het publiek domein</span>
+    </div>
+  </div>
+
+  <p>
+    Alle data is uitsluitend afkomstig uit het publiek domein of open licenties. De dataset wordt
+    beheerd via een manifest en een aparte beheerapplicatie, zodat updates gecontroleerd kunnen
+    worden uitgerold naar meerdere Buurtboxen.
+  </p>
+</section>
+
+<hr>
+
+<section id="planning">
+  <h2>Planning</h2>
+  <p>De Buurtbox wordt in zes maanden ontwikkeld, met een werkend prototype, een gebruikerspilot
+  en een open-source release als voornaamste mijlpalen.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Maand</th>
+        <th>Mijlpaal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Hardware bestellen; ontwikkeling data-beheerdashboard starten; contact leggen met potentiële pilotpartners</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Werkend prototype bouwen; eerste versie van de dataset opleveren</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Prototype testen en doorontwikkelen; portalinterface en UX uitwerken</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Prototype klaarmaken voor gebruikerstest; poster en handleiding ontwerpen; pilottest uitvoeren met partner</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Gebruikerstests afronden; resultaten analyseren; verbeterplan opstellen op basis van de bevindingen</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Definitief prototype; dataset publiceren; code open-source vrijgeven; resultatenoverzicht schrijven; zelfbouwinstructies voor de hardware publiceren</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<hr>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>
+    Buurtbox is een open project. Of je een pilot wilt opzetten, wilt bijdragen aan de dataset
+    of gewoon meer wilt weten — neem gerust contact op.
+  </p>
+  <p>
+    <strong>Lars Böhm</strong><br>
+    <a href="mailto:info@buurtbox.org">info@buurtbox.org</a>
+  </p>
+</section>
+{{ else }}
 <section class="pilot-cta">
   <p class="eyebrow">Pilot</p>
   <h2>Could your neighbourhood be a Buurtbox pilot?</h2>
@@ -17,7 +211,7 @@
     organisations to help test the first Buurtbox prototype in a real neighbourhood.
   </p>
   <div class="cta-actions">
-    <a class="primary-cta" href="{{ "/pilot/" | relURL }}">Explore the pilot</a>
+    <a class="primary-cta" href="{{ "pilot/" | relLangURL }}">Explore the pilot</a>
     <a class="secondary-cta" href="mailto:info@buurtbox.org?subject=Buurtbox%20pilot%20enquiry">Get in touch</a>
   </div>
 </section>
@@ -27,14 +221,14 @@
 
   <h3>The problem</h3>
   <p>
-    Modern society is deeply dependent on digital infrastructure for access to essential knowledge —
+    Modern society is deeply dependent on digital infrastructure for access to essential knowledge -
     Wikipedia for everyday information, maps for navigation, government health sites like the RIVM
     and GGD for medical guidance. Internet access in the Netherlands is fast and reliable nearly
     everywhere, so local storage feels unnecessary. Until it isn't.
   </p>
   <p>
-    When internet access fails — during a cyberattack, a large-scale power outage, or a natural
-    disaster — the sudden loss of that information can lead to genuinely dangerous situations.
+    When internet access fails - during a cyberattack, a large-scale power outage, or a natural
+    disaster - the sudden loss of that information can lead to genuinely dangerous situations.
     Emergency services become overloaded. People can't find first-aid instructions. Coordination
     breaks down.
   </p>
@@ -43,7 +237,7 @@
   <p>
     <strong>Buurtbox</strong> is a plug-and-play local data station designed for installation in
     neighbourhood and community centres. It broadcasts a local Wi-Fi network. When users connect,
-    they are redirected to a portal where a curated collection of offline data is available —
+    they are redirected to a portal where a curated collection of offline data is available -
     no internet required.
   </p>
   <p>
@@ -63,9 +257,9 @@
   </p>
 
   <ul>
-    <li><strong>Server:</strong> Raspberry Pi 4 or 5 — energy-efficient, robust, and widely available</li>
-    <li><strong>Storage:</strong> 1 TB+ SSD — enough for Wikipedia, maps, and much more</li>
-    <li><strong>Backup power:</strong> High-capacity powerbank — automatic failover when mains power fails</li>
+    <li><strong>Server:</strong> Raspberry Pi 4 or 5 - energy-efficient, robust, and widely available</li>
+    <li><strong>Storage:</strong> 1 TB+ SSD - enough for Wikipedia, maps, and much more</li>
+    <li><strong>Backup power:</strong> High-capacity powerbank - automatic failover when mains power fails</li>
     <li><strong>Enclosure:</strong> Compact housing suitable for a shelf or desk in a community space</li>
   </ul>
 
@@ -82,7 +276,7 @@
       <tr>
         <td>Standard</td>
         <td>Mains power + powerbank failover</td>
-        <td>1–2 days on battery</td>
+        <td>1-2 days on battery</td>
       </tr>
       <tr>
         <td>30-min button</td>
@@ -101,7 +295,7 @@
   <p>
     A LoRa transceiver can be added to each Buurtbox to form a local mesh network between units
     across a neighbourhood. This enables text-based communication and news exchange between
-    Buurtboxes over distances of several kilometres — even when fixed internet infrastructure is
+    Buurtboxes over distances of several kilometres - even when fixed internet infrastructure is
     completely unavailable.
   </p>
 </section>
@@ -202,12 +396,13 @@
   <h2>Contact</h2>
   <p>
     Buurtbox is an open project. Whether you're interested in running a pilot, contributing to the
-    dataset, or simply want to learn more — feel free to reach out.
+    dataset, or simply want to learn more - feel free to reach out.
   </p>
   <p>
     <strong>Lars Böhm</strong><br>
     <a href="mailto:info@buurtbox.org">info@buurtbox.org</a>
   </p>
 </section>
+{{ end }}
 
 {{ end }}

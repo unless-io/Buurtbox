@@ -1,9 +1,20 @@
-{{ $homeBase := "" | relURL }}
+{{ $page := . }}
+{{ $homeBase := .Site.Home.RelPermalink }}
 {{ range .Site.Menus.main }}
 {{ $url := .URL }}
 {{ if hasPrefix $url "#" }}
-<a href="{{ if eq $.RelPermalink $homeBase }}{{ $url }}{{ else }}{{ $homeBase }}{{ $url }}{{ end }}">{{ .Name }}</a>
+<a href="{{ if $page.IsHome }}{{ $url }}{{ else }}{{ printf "%s%s" $homeBase $url }}{{ end }}">{{ .Name }}</a>
 {{ else }}
-<a href="{{ $url | relURL }}">{{ .Name }}</a>
+<a href="{{ $url | relLangURL }}">{{ .Name }}</a>
+{{ end }}
+{{ end }}
+{{ $translations := .AllTranslations.ByLanguage }}
+{{ if eq (len $translations) 0 }}
+{{ $translations = .Site.Home.AllTranslations.ByLanguage }}
+{{ end }}
+{{ if gt (len $translations) 1 }}
+|
+{{ range $translations }}
+<a href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}">{{ .Language.Label }}</a>
 {{ end }}
 {{ end }}

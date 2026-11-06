@@ -1,0 +1,10 @@
+<section class="hero">
+  <h1><a href="{{ .Site.Home.RelPermalink }}">Buurtbox</a></h1>
+  {{ if eq .Site.Language.Lang "nl" }}
+  <p class="tagline">Informatie die beschikbaar blijft als alles uitvalt</p>
+  <p class="status-badge">🚧 Dit project is momenteel in ontwikkeling</p>
+  {{ else }}
+  <p class="tagline">Resilient data hubs for total blackouts</p>
+  <p class="status-badge">🚧 This project is currently in development</p>
+  {{ end }}
+</section>

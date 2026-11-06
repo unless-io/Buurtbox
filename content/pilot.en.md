@@ -19,7 +19,7 @@ We are now looking for organisations and communities that want to help us test t
 
 A Buurtbox is a small, locally accessible information station that can continue operating during an internet or power outage.
 
-When normal infrastructure is unavailable, the Buurtbox can provide a local Wi-Fi network that residents can access with an ordinary smartphone — without an app, internet connection or mobile subscription.
+When normal infrastructure is unavailable, the Buurtbox can provide a local Wi-Fi network that residents can access with an ordinary smartphone - without an app, internet connection or mobile subscription.
 
 Depending on the pilot, the station could provide access to information such as:
 
@@ -118,6 +118,6 @@ We would love to hear from municipalities, safety organisations, community organ
 
 At this stage, an initial conversation is enough. We can discuss your neighbourhood, the challenges you see, and whether Buurtbox could be useful in your context.
 
-**[Discuss a pilot →](mailto:info@buurtbox.org?subject=Buurtbox%20pilot%20enquiry)**
+**[Discuss a pilot ->](mailto:info@buurtbox.org?subject=Buurtbox%20pilot%20enquiry)**
 
 Email: [info@buurtbox.org](mailto:info@buurtbox.org)

@@ -1,22 +1,24 @@
 # Buurtbox
 
+## EN
+
 > Buurtbox is a plug-and-play offline data hub for neighbourhoods. An energy-efficient local server that keeps essential information available when the internet goes down. Currently in development.
 
-## About
+### About
 
-Buurtbox is an open hardware and software project led by Lars Böhm. It is designed to be installed in neighbourhood and community centres in the Netherlands. The device broadcasts a local Wi-Fi network; connecting users are redirected to an offline portal with a curated dataset of public-domain and openly licensed content.
+Buurtbox is an open hardware and software project led by Lars Bohm. It is designed to be installed in neighbourhood and community centres in the Netherlands. The device broadcasts a local Wi-Fi network; connecting users are redirected to an offline portal with a curated dataset of public-domain and openly licensed content.
 
-The project addresses the dependency of modern society on internet infrastructure for access to essential knowledge — Wikipedia, maps, health information, emergency protocols — and the risks this creates during power outages, cyberattacks, or natural disasters.
+The project addresses the dependency of modern society on internet infrastructure for access to essential knowledge - Wikipedia, maps, health information, emergency protocols - and the risks this creates during power outages, cyberattacks, or natural disasters.
 
-## Hardware
+### Hardware
 
 - Server: Raspberry Pi 4 or 5
 - Storage: 1 TB+ SSD
 - Power: High-capacity powerbank with automatic mains failover
-- Power modes: standard (1–2 days on battery), 30-min button mode (1 week+), solar (indefinite)
+- Power modes: standard (1-2 days on battery), 30-min button mode (1 week+), solar (indefinite)
 - Future extension: LoRa transceiver for mesh networking between Buurtboxes
 
-## Offline data available
+### Offline data available
 
 - Full Wikipedia (Dutch and English)
 - Government health information (RIVM, GGD)
@@ -26,7 +28,7 @@ The project addresses the dependency of modern society on internet infrastructur
 - Public-domain e-books and audiobooks
 - Public-domain cultural archive (art, music)
 
-## Development timeline
+### Development timeline
 
 - Month 1: Hardware procurement, data management dashboard development, partner outreach
 - Month 2: Prototype build, first dataset version
@@ -35,8 +37,51 @@ The project addresses the dependency of modern society on internet infrastructur
 - Month 5: Test analysis and improvement planning
 - Month 6: Final prototype, open-source release of dataset and code, results publication
 
-## Contact
+### Contact
 
-- Project lead: Lars Böhm
+- Project lead: Lars Bohm
 - Email: info@buurtbox.org
+- Website: https://buurtbox.org
+
+## NL
+
+> Buurtbox is een plug-and-play offline datahub voor buurten. Een energiezuinige lokale server die essentiële informatie beschikbaar houdt wanneer internet uitvalt. Momenteel in ontwikkeling.
+
+### Over het project
+
+Buurtbox is een open hardware- en softwareproject onder leiding van Lars Bohm. Het project is bedoeld voor plaatsing in buurt- en wijkcentra in Nederland. Het apparaat zendt een lokaal wifi-netwerk uit; gebruikers worden doorgestuurd naar een offline portaal met een samengestelde dataset van publiek-domein en open gelicenseerde content.
+
+Het project speelt in op de afhankelijkheid van de moderne samenleving van internetinfrastructuur voor toegang tot essentiële kennis - Wikipedia, kaarten, gezondheidsinformatie, noodprotocollen - en de risico's daarvan bij stroomuitval, cyberaanvallen of natuurrampen.
+
+### Hardware
+
+- Server: Raspberry Pi 4 of 5
+- Opslag: 1 TB+ SSD
+- Stroom: Powerbank met hoge capaciteit en automatische netstroom-failover
+- Stroommodi: standaard (1-2 dagen op batterij), 30-minutenknop (1 week+), zon (onbeperkt)
+- Toekomstige uitbreiding: LoRa-transceiver voor mesh-netwerken tussen Buurtboxen
+
+### Beschikbare offline data
+
+- Volledige Wikipedia (Nederlands en Engels)
+- Overheidsinformatie gezondheid (RIVM, GGD)
+- EHBO-handleidingen en medische naslagwerken
+- Offline OpenStreetMap-data voor de regio
+- Noodresponsprotocollen en handboeken
+- Publiek-domein e-books en audiobooks
+- Publiek-domein cultureel archief (kunst, muziek)
+
+### Ontwikkelplanning
+
+- Maand 1: Hardware inkopen, ontwikkeling datadashboard, partnerwerving
+- Maand 2: Prototypebouw, eerste datasetversie
+- Maand 3: Prototype testen en itereren, portalinterface ontwikkelen
+- Maand 4: Gebruikerstest voorbereiden en pilottests met partner
+- Maand 5: Testanalyse en verbeterplanning
+- Maand 6: Definitief prototype, open-source release van dataset en code, publicatie resultaten
+
+### Contact
+
+- Projectleider: Lars Bohm
+- E-mail: info@buurtbox.org
 - Website: https://buurtbox.org

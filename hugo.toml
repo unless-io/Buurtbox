@@ -1,9 +1,10 @@
 baseURL = 'https://buurtbox.org/'
-locale = 'en-US'
 title = 'Buurtbox'
 author = 'Lars Böhm'
 copyright = 'Copyright © 2026, Lars Böhm.'
 enableRobotsTXT = true
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
 
 theme = 'hugo-bearblog'
 
@@ -20,37 +21,77 @@ ignoreErrors = ['error-disable-taxonomy']
     codeFences = true
 
 [params]
-  description = 'Buurtbox is a plug-and-play offline data hub for neighbourhoods — keeping essential information available when the internet goes down.'
   hideMadeWithLine = false
   favicon = 'images/favicon.svg'
   images = ['images/share.png']
 
-[[menu.main]]
-  name = 'Pilot'
-  url = '/pilot/'
-  weight = 5
+[languages]
+  [languages.en]
+    label = 'English'
+    locale = 'en-US'
+    weight = 1
+    [languages.en.params]
+      description = 'Buurtbox is a plug-and-play offline data hub for neighbourhoods - keeping essential information available when the internet goes down.'
+    [[languages.en.menu.main]]
+      name = 'Pilot'
+      url = 'pilot/'
+      weight = 5
+    [[languages.en.menu.main]]
+      name = 'Blog'
+      url = 'posts/'
+      weight = 8
+    [[languages.en.menu.main]]
+      name = 'Concept'
+      url = '#concept'
+      weight = 10
+    [[languages.en.menu.main]]
+      name = 'Hardware'
+      url = '#hardware'
+      weight = 20
+    [[languages.en.menu.main]]
+      name = 'Features'
+      url = '#features'
+      weight = 30
+    [[languages.en.menu.main]]
+      name = 'Planning'
+      url = '#planning'
+      weight = 40
+    [[languages.en.menu.main]]
+      name = 'Contact'
+      url = '#contact'
+      weight = 50
 
-[[menu.main]]
-  name = 'Concept'
-  url = '#concept'
-  weight = 10
-
-[[menu.main]]
-  name = 'Hardware'
-  url = '#hardware'
-  weight = 20
-
-[[menu.main]]
-  name = 'Features'
-  url = '#features'
-  weight = 30
-
-[[menu.main]]
-  name = 'Planning'
-  url = '#planning'
-  weight = 40
-
-[[menu.main]]
-  name = 'Contact'
-  url = '#contact'
-  weight = 50
+  [languages.nl]
+    label = 'Nederlands'
+    locale = 'nl-NL'
+    weight = 2
+    [languages.nl.params]
+      description = 'Buurtbox is een plug-and-play offline datahub voor buurten - zodat essentiële informatie beschikbaar blijft wanneer internet uitvalt.'
+    [[languages.nl.menu.main]]
+      name = 'Pilot'
+      url = 'pilot/'
+      weight = 5
+    [[languages.nl.menu.main]]
+      name = 'Blog'
+      url = 'posts/'
+      weight = 8
+    [[languages.nl.menu.main]]
+      name = 'Concept'
+      url = '#concept'
+      weight = 10
+    [[languages.nl.menu.main]]
+      name = 'Hardware'
+      url = '#hardware'
+      weight = 20
+    [[languages.nl.menu.main]]
+      name = 'Functies'
+      url = '#features'
+      weight = 30
+    [[languages.nl.menu.main]]
+      name = 'Planning'
+      url = '#planning'
+      weight = 40
+    [[languages.nl.menu.main]]
+      name = 'Contact'
+      url = '#contact'
+      weight = 50

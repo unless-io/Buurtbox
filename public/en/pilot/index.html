@@ -14,22 +14,35 @@
 <meta name="keywords" content="" />
 
 
-<meta property="og:url" content="http://localhost:1313/pilot/">
-	<meta property="og:site_name" content="Buurtbox">
-	<meta property="og:title" content="Pilot">
-	<meta property="og:description" content="Help test resilient digital infrastructure in the neighbourhood with the first Buurtbox prototype.">
-	<meta property="og:locale" content="en_US">
-	<meta property="og:type" content="article">
-		<meta property="og:image" content="http://localhost:1313/images/share.png">
+
+  
+    
+      
+    
+  
+
+
+
+<meta property="og:site_name" content="Buurtbox" />
+<meta property="og:url" content="http://localhost:1313/en/pilot/" />
+<meta property="og:title" content="Pilot" />
+<meta property="og:description" content="Help test resilient digital infrastructure in the neighbourhood with the first Buurtbox prototype." />
+<meta property="og:locale" content="en-US" />
+<meta property="og:image" content="http://localhost:1313/images/share.png" />
+
+<meta property="og:type" content="article" />
+<meta property="article:section" content="" />
+<meta property="article:published_time" content="0001-01-01T00:00:00Z" />
+<meta property="article:modified_time" content="0001-01-01T00:00:00Z" />
 
 
 
 
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image" content="http://localhost:1313/images/share.png">
-	<meta name="twitter:title" content="Pilot">
-	<meta name="twitter:description" content="Help test resilient digital infrastructure in the neighbourhood with the first Buurtbox prototype.">
 
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="http://localhost:1313/images/share.png" />
+<meta name="twitter:title" content="Pilot" />
+<meta name="twitter:description" content="Help test resilient digital infrastructure in the neighbourhood with the first Buurtbox prototype." />
 
 
 
@@ -231,6 +244,11 @@
     margin-bottom: 0.25rem;
   }
 
+  .hero h1 a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   .tagline {
     font-size: 1.15rem;
     color: var(--text-color);
@@ -321,6 +339,59 @@
     font-size: 0.9rem;
   }
 
+  .post-overview-grid {
+    display: grid;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+  }
+
+  .post-overview-card {
+    border: 1px solid color-mix(in srgb, var(--text-color) 20%, transparent);
+    border-radius: 10px;
+    overflow: hidden;
+    background: color-mix(in srgb, var(--background-color) 95%, var(--link-color));
+  }
+
+  .post-overview-thumb-link {
+    display: block;
+  }
+
+  .post-overview-thumb {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 8;
+    object-fit: cover;
+  }
+
+  .post-overview-body {
+    padding: 1rem;
+  }
+
+  .post-overview-date {
+    display: inline-block;
+    font-size: 0.85rem;
+    opacity: 0.85;
+    margin-bottom: 0.4rem;
+  }
+
+  .post-overview-title {
+    margin: 0 0 0.45rem;
+  }
+
+  .post-overview-title a {
+    text-decoration: none;
+  }
+
+  .post-overview-excerpt {
+    margin: 0;
+  }
+
+  .post-overview-readmore {
+    margin: 0.75rem 0 0;
+    font-weight: 600;
+  }
+
    
   table {
     border-collapse: collapse;
@@ -369,6 +440,11 @@
 
 <meta name="author" content="Lars Böhm" />
 
+
+
+
+
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -377,27 +453,20 @@
       "@type": "WebSite",
       "name": "Buurtbox",
       "url": "https://buurtbox.org",
-      "description": "Plug-and-play offline data hub for neighbourhoods — keeping essential information available when the internet goes down."
+      "description": "\"Buurtbox is a plug-and-play offline data hub for neighbourhoods - keeping essential information available when the internet goes down.\""
     },
     {
       "@type": "Organization",
       "name": "Buurtbox",
       "url": "https://buurtbox.org",
       "email": "info@buurtbox.org",
-      "description": "Buurtbox is a local data station installed in neighbourhood centres. It broadcasts a Wi-Fi hotspot with a curated offline dataset covering Wikipedia, maps, first-aid, and emergency protocols — available without internet access.",
+      "description": "\"Buurtbox is a local data station installed in neighbourhood centres. It broadcasts a Wi-Fi hotspot with a curated offline dataset covering Wikipedia, maps, first-aid, and emergency protocols - available without internet access.\"",
       "founder": {
         "@type": "Person",
         "name": "Lars Böhm",
         "email": "info@buurtbox.org"
       },
-      "knowsAbout": [
-        "offline data access",
-        "emergency preparedness",
-        "civic resilience",
-        "Raspberry Pi",
-        "neighbourhood infrastructure",
-        "mesh networking"
-      ]
+      "knowsAbout": "[\"offline data access\",\"emergency preparedness\",\"civic resilience\",\"Raspberry Pi\",\"neighbourhood infrastructure\",\"mesh networking\"]"
     }
   ]
 }
@@ -411,38 +480,60 @@
 
 
 
-<a href="/pilot/">Pilot</a>
+
+<a href="/en/pilot/">Pilot</a>
 
 
 
 
-<a href="/#concept">Concept</a>
+<a href="/en/posts/">Blog</a>
 
 
 
 
-<a href="/#hardware">Hardware</a>
+<a href="/en/#concept">Concept</a>
 
 
 
 
-<a href="/#features">Features</a>
+<a href="/en/#hardware">Hardware</a>
 
 
 
 
-<a href="/#planning">Planning</a>
+<a href="/en/#features">Features</a>
 
 
 
 
-<a href="/#contact">Contact</a>
+<a href="/en/#planning">Planning</a>
+
+
+
+
+<a href="/en/#contact">Contact</a>
+
+
+
+
+
+|
+
+<a href="/en/pilot/" hreflang="en">English</a>
+
+<a href="/nl/pilot/" hreflang="nl">Nederlands</a>
 
 </nav>
 </header>
-  <main>
-
+  <main><section class="hero">
+  <h1><a href="/en/">Buurtbox</a></h1>
+  
+  <p class="tagline">Resilient data hubs for total blackouts</p>
+  <p class="status-badge">🚧 This project is currently in development</p>
+  
+</section>
 <content>
+  
   <h1 id="buurtbox-pilot">Buurtbox Pilot</h1>
 <h2 id="help-us-test-resilient-digital-infrastructure-in-the-neighbourhood">Help us test resilient digital infrastructure in the neighbourhood</h2>
 <p>What happens when a neighbourhood loses internet and electricity during an emergency?</p>
@@ -451,7 +542,7 @@
 <p><strong>We are looking for pilot partners for the first Buurtbox prototype, planned for Q1 2027.</strong></p>
 <h2 id="what-is-a-buurtbox">What is a Buurtbox?</h2>
 <p>A Buurtbox is a small, locally accessible information station that can continue operating during an internet or power outage.</p>
-<p>When normal infrastructure is unavailable, the Buurtbox can provide a local Wi-Fi network that residents can access with an ordinary smartphone — without an app, internet connection or mobile subscription.</p>
+<p>When normal infrastructure is unavailable, the Buurtbox can provide a local Wi-Fi network that residents can access with an ordinary smartphone - without an app, internet connection or mobile subscription.</p>
 <p>Depending on the pilot, the station could provide access to information such as:</p>
 <ul>
 <li>first-aid and emergency instructions</li>
@@ -521,12 +612,10 @@ Partners with knowledge of digital commons, open hardware, community participati
 <p>We would love to hear from municipalities, safety organisations, community organisations, housing associations, researchers and other organisations interested in neighbourhood resilience and digital infrastructure.</p>
 <p><strong>You don&rsquo;t need to have a fully defined pilot proposal.</strong></p>
 <p>At this stage, an initial conversation is enough. We can discuss your neighbourhood, the challenges you see, and whether Buurtbox could be useful in your context.</p>
-<p><strong><a href="mailto:info@buurtbox.org?subject=Buurtbox%20pilot%20enquiry">Discuss a pilot →</a></strong></p>
+<p><strong><a href="mailto:info@buurtbox.org?subject=Buurtbox%20pilot%20enquiry">Discuss a pilot -&gt;</a></strong></p>
 <p>Email: <a href="mailto:info@buurtbox.org">info@buurtbox.org</a></p>
 
 </content>
-
-
 
 <p>
   
