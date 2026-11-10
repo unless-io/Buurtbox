@@ -1,1 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Buurtbox</title><link>https://buurtbox.org/en/</link><description>Recent content on Buurtbox</description><generator>Hugo</generator><language>en-US</language><copyright>Copyright © 2026, Lars Böhm.</copyright><lastBuildDate>Thu, 05 Nov 2026 14:00:00 +0100</lastBuildDate><atom:link href="https://buurtbox.org/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Building Buurtbox v0.1 for the DACC Digitale Autonomie Unconference</title><link>https://buurtbox.org/en/posts/dacc-unconference/</link><pubDate>Thu, 05 Nov 2026 14:00:00 +0100</pubDate><guid>https://buurtbox.org/en/posts/dacc-unconference/</guid><description>&lt;p&gt;As a part of the Buurtbox project, I have been researching existing projects that touch on resilience and autonomy. That is how I came across the Digital Autonomy Competence Center (DACC).&lt;/p&gt;</description></item><item><title>Pilot</title><link>https://buurtbox.org/en/pilot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://buurtbox.org/en/pilot/</guid><description>&lt;h1 id="buurtbox-pilot"&gt;Buurtbox Pilot&lt;/h1&gt;&#10;&lt;h2 id="help-us-test-resilient-digital-infrastructure-in-the-neighbourhood"&gt;Help us test resilient digital infrastructure in the neighbourhood&lt;/h2&gt;&#10;&lt;p&gt;What happens when a neighbourhood loses internet and electricity during an emergency?&lt;/p&gt;&#10;&lt;p&gt;Buurtbox is an open-source, energy-efficient offline information station designed to keep essential digital information available when normal digital infrastructure is unavailable.&lt;/p&gt;&#10;&lt;p&gt;We are now looking for organisations and communities that want to help us test this concept in practice.&lt;/p&gt;&#10;&lt;p&gt;&lt;strong&gt;We are looking for pilot partners for the first Buurtbox prototype, planned for Q1 2027.&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Buurtbox</title>
+		<link>https://buurtbox.org/en/</link>
+		<description>Recent content on Buurtbox</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+			<copyright>Copyright © 2026, Lars Böhm.</copyright>
+		
+		
+			<lastBuildDate>Mon, 09 Nov 2026 18:00:00 +0100</lastBuildDate>
+		
+			<atom:link href="https://buurtbox.org/en/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Inside a Noodsteunpunt: Lessons from an Emergency Exercise in Alkmaar</title>
+				<link>https://buurtbox.org/en/posts/noodsteunpunt-oefening/</link>
+				<pubDate>Mon, 09 Nov 2026 18:00:00 +0100</pubDate>
+				<guid>https://buurtbox.org/en/posts/noodsteunpunt-oefening/</guid>
+				<description>&lt;p&gt;A noodsteunpunt is a local emergency support point where residents can go for help during a large-scale crisis. When I read that the municipality of Alkmaar was running a full exercise at community centre Mare Nostrum, I reached out to ask if I could join.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Building Buurtbox v0.1 for the DACC Digitale Autonomie Unconference</title>
+				<link>https://buurtbox.org/en/posts/dacc-unconference/</link>
+				<pubDate>Thu, 05 Nov 2026 14:00:00 +0100</pubDate>
+				<guid>https://buurtbox.org/en/posts/dacc-unconference/</guid>
+				<description>&lt;p&gt;As a part of the Buurtbox project, I have been researching existing projects that touch on resilience and autonomy. That is how I came across the Digital Autonomy Competence Center (DACC).&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Pilot</title>
+				<link>https://buurtbox.org/en/pilot/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://buurtbox.org/en/pilot/</guid>
+				<description>&lt;h1 id=&#34;buurtbox-pilot&#34;&gt;Buurtbox Pilot&lt;/h1&gt;&#xA;&lt;h2 id=&#34;help-us-test-resilient-digital-infrastructure-in-the-neighbourhood&#34;&gt;Help us test resilient digital infrastructure in the neighbourhood&lt;/h2&gt;&#xA;&lt;p&gt;What happens when a neighbourhood loses internet and electricity during an emergency?&lt;/p&gt;&#xA;&lt;p&gt;Buurtbox is an open-source, energy-efficient offline information station designed to keep essential digital information available when normal digital infrastructure is unavailable.&lt;/p&gt;&#xA;&lt;p&gt;We are now looking for organisations and communities that want to help us test this concept in practice.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;We are looking for pilot partners for the first Buurtbox prototype, planned for Q1 2027.&lt;/strong&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>
