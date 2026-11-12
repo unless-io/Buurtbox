@@ -102,6 +102,10 @@ Mijn belangrijkste conclusie is dat burgerkracht essentieel is om een noodsteunp
 
 Ten eerste: zorg dat mensen alleen naar het noodsteunpunt gaan als ze hun probleem echt niet zelf kunnen oplossen. Ten tweede: als mensen er eenmaal zijn, zorg dan dat de informatie duidelijk en toegankelijk genoeg is om dingen zelf op te lossen. Ten derde: als medewerkers moeten ingrijpen, zorg dan dat triage snel gaat en dat de beschikbare middelen effectief worden ingezet.
 
-Ik zie een duidelijke plek voor Buurtbox in alle drie deze processen — zowel als toegankelijke informatiebron met lokaal nieuws en updates, als als coördinatiehulpmiddel voor medewerkers van het noodsteunpunt.
+De oefening liet nog iets anders zien: het echte knelpunt in een crisis zit niet alleen in het noodsteunpunt zelf, maar in de informatiestroom eromheen. Mensen komen vaak verward en onder stress binnen en weten niet altijd goed of ze überhaupt naar het noodsteunpunt moeten. Ook medewerkers hebben behoefte aan duidelijke, betrouwbare updates over wegafsluitingen, voorzieningen, opvangmogelijkheden en noodcommunicatie. Daar past Buurtbox goed bij.
+
+Buurtbox is niet bedoeld om het noodsteunpunt of de formele hulpdiensten te vervangen. Het kan juist de lokale crisisrespons om hen heen versterken. Het kan fungeren als een vertrouwde informatiehub voor de buurt: actuele updates, praktische begeleiding, lokale contactgegevens en gemakkelijke toegang tot de informatie die mensen nodig hebben wanneer normale communicatiemiddelen uitvallen. Het kan medewerkers ook helpen door de belangrijkste informatie zichtbaar en gemakkelijk te delen, vooral in chaotische en snel veranderende situaties.
+
+Voor mij was de belangrijkste les uit deze oefening dat veerkracht in een crisis niet alleen afhangt van formele instellingen, maar ook van lokale zelforganisatie. Het noodsteunpunt is de eerste lijn. Buurtbox is de lokale infrastructuur die buurten kan helpen om geïnformeerd, gecoördineerd en veerkrachtig te blijven voor, tijdens en na een storing.
 
 ![Chocoladereep als dank voor deelname aan de oefening.](/images/posts/noodsteunpunt-oefening/chocolate.jpg)

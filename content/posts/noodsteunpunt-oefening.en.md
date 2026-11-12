@@ -102,6 +102,10 @@ My main takeaway is that civilian resilience is essential to making a noodsteunp
 
 First: make sure people only come to the noodsteunpunt if they genuinely cannot solve their problem otherwise. Second: when people do arrive, make information clear and accessible enough for them to resolve things themselves. Third: when staff do need to intervene, make triage fast and resource management effective.
 
-I see a clear space for Buurtbox in all three of these areas — both as an accessible repository of local information and updates, and as a coordination tool for noodsteunpunt staff.
+The exercise also showed something else: the real bottleneck in a crisis is not only the emergency support point itself, but the information flow around it. People arrive confused, under stress, and often without the right information to decide whether they should turn up at all. Staff also need clear, reliable updates on road closures, services, shelter options, and emergency communications. This is where Buurtbox fits.
+
+Buurtbox is not meant to replace the noodsteunpunt or formal emergency services. Rather, it can strengthen the local crisis response layer around them. It can act as a trusted neighbourhood information hub: current updates, practical guidance, local contacts, and easy access to the information people need when normal communication channels fail. It can also support staff by making the most important information visible and easy to share, especially in chaotic and fast-moving situations.
+
+For me, the most important lesson from this exercise was that emergency resilience depends on both formal institutions and local self-organisation. The noodsteunpunt is the front line. Buurtbox is the local infrastructure that can help communities stay informed, coordinated, and resilient before, during, and after disruption.
 
 ![Chocolate received as a thank-you for participating in the exercise.](/images/posts/noodsteunpunt-oefening/chocolate.jpg)

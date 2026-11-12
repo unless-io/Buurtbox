@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Blog on Buurtbox</title>
-		<link>http://localhost:1313/en/posts/</link>
+		<link>https://buurtbox.org/en/posts/</link>
 		<description>Recent content in Blog on Buurtbox</description>
 		<generator>Hugo</generator>
 		<language>en-US</language>
@@ -14,19 +14,19 @@
 		
 			<lastBuildDate>Mon, 09 Nov 2026 18:00:00 +0100</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/en/posts/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://buurtbox.org/en/posts/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Inside a Noodsteunpunt: Lessons from an Emergency Exercise in Alkmaar</title>
-				<link>http://localhost:1313/en/posts/noodsteunpunt-oefening/</link>
+				<link>https://buurtbox.org/en/posts/noodsteunpunt-oefening/</link>
 				<pubDate>Mon, 09 Nov 2026 18:00:00 +0100</pubDate>
-				<guid>http://localhost:1313/en/posts/noodsteunpunt-oefening/</guid>
+				<guid>https://buurtbox.org/en/posts/noodsteunpunt-oefening/</guid>
 				<description>&lt;p&gt;A noodsteunpunt is a local emergency support point where residents can go for help during a large-scale crisis. When I read that the municipality of Alkmaar was running a full exercise at community centre Mare Nostrum, I reached out to ask if I could join.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Building Buurtbox v0.1 for the DACC Digitale Autonomie Unconference</title>
-				<link>http://localhost:1313/en/posts/dacc-unconference/</link>
+				<link>https://buurtbox.org/en/posts/dacc-unconference/</link>
 				<pubDate>Thu, 05 Nov 2026 14:00:00 +0100</pubDate>
-				<guid>http://localhost:1313/en/posts/dacc-unconference/</guid>
+				<guid>https://buurtbox.org/en/posts/dacc-unconference/</guid>
 				<description>&lt;p&gt;As a part of the Buurtbox project, I have been researching existing projects that touch on resilience and autonomy. That is how I came across the Digital Autonomy Competence Center (DACC).&lt;/p&gt;</description>
 			</item>
 	</channel>

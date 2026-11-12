@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Blog on Buurtbox</title>
-		<link>http://localhost:1313/nl/posts/</link>
+		<link>https://buurtbox.org/nl/posts/</link>
 		<description>Recent content in Blog on Buurtbox</description>
 		<generator>Hugo</generator>
 		<language>nl-NL</language>
@@ -14,19 +14,19 @@
 		
 			<lastBuildDate>Mon, 09 Nov 2026 18:00:00 +0100</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/nl/posts/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://buurtbox.org/nl/posts/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Binnen bij een noodsteunpunt: lessen uit een oefening in Alkmaar</title>
-				<link>http://localhost:1313/nl/posts/noodsteunpunt-oefening/</link>
+				<link>https://buurtbox.org/nl/posts/noodsteunpunt-oefening/</link>
 				<pubDate>Mon, 09 Nov 2026 18:00:00 +0100</pubDate>
-				<guid>http://localhost:1313/nl/posts/noodsteunpunt-oefening/</guid>
+				<guid>https://buurtbox.org/nl/posts/noodsteunpunt-oefening/</guid>
 				<description>&lt;p&gt;Een noodsteunpunt is een lokaal opvangpunt waar bewoners terechtkunnen voor hulp tijdens een grootschalige crisis. Toen ik las dat de gemeente Alkmaar een volledige oefening organiseerde bij buurthuis De Mare Nostrum, nam ik contact op om te vragen of ik mee mocht doen.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Buurtbox v0.1 ontwikkelen voor de DACC Digitale Autonomie Unconference</title>
-				<link>http://localhost:1313/nl/posts/dacc-unconference/</link>
+				<link>https://buurtbox.org/nl/posts/dacc-unconference/</link>
 				<pubDate>Thu, 05 Nov 2026 14:00:00 +0100</pubDate>
-				<guid>http://localhost:1313/nl/posts/dacc-unconference/</guid>
+				<guid>https://buurtbox.org/nl/posts/dacc-unconference/</guid>
 				<description>&lt;p&gt;Als onderdeel van het Buurtbox-project onderzoek ik bestaande projecten die raken aan weerbaarheid en autonomie. Zo kwam ik terecht bij het Digital Autonomy Competence Center (DACC).&lt;/p&gt;</description>
 			</item>
 	</channel>
